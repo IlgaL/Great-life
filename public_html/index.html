@@ -9,8 +9,18 @@
         h3 {color:tomato; font-size:50px}
         </style>
         <title> Skaista lapa </title>  
+        <script>
+    function krasot(){
+        var kr=document.getElementById("krasa").value;
+        document.getElementById("fons").style="background-color:"+kr;
+    }
+    </script>
     </head>   
     <body> 
+        <form>
+  <div id="fons" style="background-color:lightgrey">Izvēlies krāsu!</div>
+  <input type="color" id="krasa" value="#00ff00" onclick="krasot();">
+</form>
         <h2> Ļoti skaists virsraksts </h2> 
         <h1> VSCO girls make me SKSKSKSKSKSKSK</h1> <br>
         <a href="https://www.imdb.com/title/tt5697572/"> Saite uz labāku nākotni </a>
