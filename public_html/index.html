@@ -9,18 +9,27 @@
         h3 {color:tomato; font-size:50px}
         </style>
         <title> Skaista lapa </title>  
-        <script>
-    function krasot(){
-        var kr=document.getElementById("krasa").value;
-        document.getElementById("fons").style="background-color:"+kr;
-    }
-    </script>
+        <link href="css/stils.css" rel="stylesheet" type="text/css">
     </head>   
     <body> 
-        <form>
-  <div id="fons" style="background-color:lightgrey">Izvēlies krāsu!</div>
-  <input type="color" id="krasa" value="#00ff00" onclick="krasot();">
-</form>
+       <form>
+        <p>Šodienas datums <input name="datums"></p>
+        <p>Ja gribi uzzināt šodienas datumu, spied pogu DATUMS 
+            <input onclick="datums.value=new Date();" name="poga" value="DATUMS" type="button">
+        </p>
+        <p>Ja gribi izdzēst datuma lodziņa saturu, spied pogu RESET
+            <input value="RESET" type="reset">
+        </p>
+    </form>
+    <form>
+        <div>1.skaitlis<input type="text" name="sk1"> </div>
+        <div>
+            <input value="X" name="reiz" onclick="rez.value=sk1.value*sk2.value" type="button">
+        </div>
+        <div>2.skaitlis<input type="text" name="sk2"> </div>
+        <hr>
+        <div>Rezultāts<input name="rez"> </div>
+    </form>
         <h2> Ļoti skaists virsraksts </h2> 
         <h1> VSCO girls make me SKSKSKSKSKSKSK</h1> <br>
         <a href="https://www.imdb.com/title/tt5697572/"> Saite uz labāku nākotni </a>
