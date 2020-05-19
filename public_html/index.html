@@ -1,49 +1,179 @@
 <!DOCTYPE html>
 <html>
-    <head> 
-        <meta charset="utf-8">
+    <head>
+        <title>Jogurti</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <style>
-        h1{color:midnightblue} 
-        body {background-color: mistyrose}
-        h2 {font-size:50px}
-        h3 {color:tomato; font-size:50px}
+            h2{font-size:20px}
+            body {background-color: #f3e0dc}
+            th, td {padding: 5px}
+          
+            
+            * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color:  #bc4639;
+  padding: 30px;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+}
+
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+nav {
+  -webkit-flex: 0,5;
+  -ms-flex: 0,5;
+  flex: 0,5;
+  background: #d4a59a;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  width: 10%;
+}
+
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f3e0dc;
+  padding: 10px;
+}
+
+footer {
+  background-color: #5c2018;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
         </style>
-        <title> Skaista lapa </title>  
-        <link href="css/stils.css" rel="stylesheet" type="text/css">
-    </head>   
-    <body> 
-       <form>
-        <p>Šodienas datums <input name="datums"></p>
-        <p>Ja gribi uzzināt šodienas datumu, spied pogu DATUMS 
-            <input onclick="datums.value=new Date();" name="poga" value="DATUMS" type="button">
-        </p>
-        <p>Ja gribi izdzēst datuma lodziņa saturu, spied pogu RESET
-            <input value="RESET" type="reset">
-        </p>
-    </form>
-    <form>
-        <div>1.skaitlis<input type="text" name="sk1"> </div>
-        <div>
-            <input value="X" name="reiz" onclick="rez.value=sk1.value*sk2.value" type="button">
-        </div>
-        <div>2.skaitlis<input type="text" name="sk2"> </div>
+    </head>
+    <body>
+        <header>
+        <h1 id="header"> Jogurti </h1>
+        </header>
+        
         <hr>
-        <div>Rezultāts<input name="rez"> </div>
-    </form>
-        <h2> Ļoti skaists virsraksts </h2> 
-        <h1> VSCO girls make me SKSKSKSKSKSKSK</h1> <br>
-        <a href="https://www.imdb.com/title/tt5697572/"> Saite uz labāku nākotni </a>
-        
-        <h2> Par labāku nākotni </h2>
-        <form method="post" name="aptauja">
-            <p> Jautājums? <br>
-                Jā <input name="atbildes" value="ja" type="radio"> <br>
-                Nē <input name="atbildes" value="ne" type="radio"> </p>
-        </form>
-       
-        Neesi heiteris - atbildi "jā" <br>
-        
-        <h3>Ivars bad</h3> <br>        
-        <img src="images/ivars.jpg" style="width: 50%; height: 50%;" alt=""/>
-         
-</html> 
+        Iemesli, lai lietotu uzturā jogurtus:
+        <ul>
+            <li> Satur dabiskās pienskābās baktērijas </li>
+            <li> Satur olbaltumvielas </li>
+            <li> To var lietot vēdera <i>funkciju</i> uzlabošanai</li>
+            <li> Labs priekš bērniem </li>
+        </ul>
+        Ja ir lielāka interese par jogurtiem uzturā, iesaku noskatīties <a href="https://www.tvnet.lv/5182719/vai-jogurti-ir-tik-veseligi-ka-daudzi-par-tiem-doma"> šo video </a>. <br>
+        <br>
+        <section> 
+         <nav>
+            
+          </nav>
+         <article>
+            
+        <p> <h2>Manas domas par visādiem jogurtiem</h2> 
+        <hr>
+        (Termins "jogurts" šoreiz tiek atstāts katra interpretācijai (tai skaitā - manai)) <br> <br>
+        <p><u>Oga</u></p> <br>
+            <img src="images/oga.jpg" alt=""/>
+            <p> Klasika. Vienmēr, kad uzrodas vēlme pēc jogurta, šī ir pirmā izvēle. Kāpēc? Jo tas ir lēts un liels. Sākumā nav nekādu problēmu izdzert glāzīti ar šo jogurtu, tomēr pēc tam tas tiek ielikts ledusskapī uz aizmiršanu. Bet, ja beigu galā pašapziņa neļauj labam jogurtam sapūt leduskapī un tiek nolemts to izdzert, trešais malks jau sāk palikt šķebinošs.</p> 
+            <br>
+            
+            <p><u>Shake</u></p> <br>
+            <img src="images/shake.jpg" alt=""/>
+            <p> Ideāls variants fitnesa cienītājiem, jo pirms dzeršanas šis dzēriens ir <b>aktīvi</b> jāsakrata 15 sekundes. 
+            <br>
+            
+            <br>
+            <p><u> Lakto jogurts ar graudiem</u></p> <br>
+            <img src="images/lakto_graudi.jpg" alt=""/>
+            <p>Kaut kas oriģināls. Kaut kas jauns. Neformīgie kunkuļi bija nevēlams pārsteigums. </p> <br>
+            
+            <p><u>Fantasia</u></p>
+            <img src="images/fantasia.jpg" alt="" style="width: 200px;height: 200px;"/>
+            <p> Ak, mana mazotnes laime. Kādreiz bija tāds prieks lūgt mammai samaksāt nesamērīgi daudz par nesamērīga tilpuma trauciņu tikai tāpēc, lai varētu pakraukšķināt mazās šokolādes bumbiņas. Ja būtu atstājuši to manā ziņā, uz mājām no veikala līdzi nāktu tikai šokolādes bumbiņu glabātuve. Nopirkt pliku šokolādi, kas būtu bijis daudz saudzīgāk mammas maciņam, man neienāca prātā.</p>
+            <br>
+            
+            <p><u>Muah!</u></p> <br>
+            <img src="images/muah!.jpg" alt=""/> <br>
+            <p>Ideāla apmēra porcija. Garšīgs. Un nav pat pārcenots. Kaut gan šī ir pirmā reize, kad ievēroju šī jogurta nosaukumu un tas tikai tāpēc, jo vajadzēja to uzrakstīt. Citādāk būtu varējis palikt anonīms.</p> <br>
+            
+            <p><u>Activia</u></p>
+            <img src="images/activia.jpg" alt="" style="width: 300px; height: 150px;"/> <br>
+            <p>Godīgi sakot, šis jogurts nav bijis manas ievērības cienīgs, bet es sajutos vainīga to neiekļaujot. Laikam tas tāpēc, jo tā ir vienīgā televīzijas reklāma, kuru atceros.</p> <br>
+            
+            <p><u>Dzeramais grieķu jogurts</u></p> <br>
+            <img src="images/grieķu.jpg" alt=""/> <br>
+            <p>Noderīgākais jogurts uz pasaules. Tas nav nekas smalks, tomēr tas pilda savu funkciju un dabūs jūs cauri grūtiem laikiem. Ļoti rekomendēju.</p><br>
+            
+            <p><u>Limbažu piens</u></p> <br>
+            <img src="images/piens.jpg" alt="" style="width: 250px; height: 250px;"/> <br>
+            <p> Tas vispār nav jogurts. </p> <br>
+         </article>
+        </section>
+            
+        <footer>    
+            <h2>Gala vērtējums</h2>
+            <hr>
+            <table>
+  <tr>
+    <th>Jogurts</th>
+    <th>Vērtējums</th>
+  </tr>
+  <tr>
+    <td>Oga</td>
+    <td>3/10</td>
+  </tr>
+  <tr>
+    <td>Shake</td>
+    <td>6,5/10</td>
+  </tr>
+  <tr>
+    <td>Lakto</td>
+    <td>3,7/10</td>
+  </tr>
+  <tr>
+    <td>Fantasia</td>
+    <td>7,4/10</td>
+  </tr>
+  <tr>
+    <td>Muah!</td>
+    <td>9,1</td>
+  </tr>
+    <tr>
+    <td>Activia</td>
+    <td>?/10</td>
+  </tr>
+  <tr>
+    <td>Dzeramais grieķu</td>
+    <td>8,5/10</td>
+  </tr>
+  <tr>
+    <td>Piens</td>
+    <td>Nepareizā kategorija/10</td>
+</table>
+        </footer>
+        <br>
+        <div>Vai ir kāds jogurts, kuru Tu vēlētos redzēt šeit? Dod ziņu! <br>
+            Skūpsti, @ziviiite.</div>
+                <br>
+    </body>
+</html>
